@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Яся, с Днём Рождения!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background-color: #f0f;
+            opacity: 0;
+            z-index: 9999;
+            animation: confetti-fall linear;
+        }
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        .dark-mode {
+            background-color: #1a1a2e;
+            color: #e6e6e6;
+        }
+        .dark-mode .bg-purple-100 {
+            background-color: #16213e;
+        }
+        .dark-mode .text-purple-800 {
+            color: #e94560;
+        }
+        .dark-mode .border-purple-300 {
+            border-color: #e94560;
+        }
+        .dark-mode .hover\:bg-purple-200:hover {
+            background-color: #0f3460;
+        }
+    </style>
+</head>
+<body class="bg-purple-50 text-purple-900">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 via-pink-100 to-purple-50">
+        <div class="container mx-auto px-6 py-20 text-center">
+            <h1 class="title-font text-5xl md:text-7xl font-bold mb-6 text-purple-800 animate-bounce">
+                Яся, поздравляю тебя с днём рождения!
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-purple-700">
+                Сегодня тебе исполняется 19! 
+            </p>
+            <div class="w-24 h-1 bg-pink-400 mx-auto mb-12"></div>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto text-purple-600">
+                Будущий дипломат и специалист по международным отношениям, пусть этот год принесёт тебе множество интересных возможностей!
+            </p>
+        </div>
+    </section>
+
+    <!-- Congratulations Section -->
+    <section class="py-20 bg-purple-100">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-3xl md:text-4xl font-bold mb-12 text-center text-purple-800">
+                Поздравления для тебя
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-purple-300 transform hover:scale-105 transition duration-300">
+                    <div class="text-pink-500 text-4xl mb-4">🎓</div>
+                    <h3 class="title-font text-xl font-semibold mb-4">Успехов в учёбе</h3>
+                    <p class="text-purple-700">Пусть международные отношения покоряются тебе легко, а все экзамены сдаются на отлично!</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-purple-300 transform hover:scale-105 transition duration-300">
+                    <div class="text-pink-500 text-4xl mb-4">✈️</div>
+                    <h3 class="title-font text-xl font-semibold mb-4">Интересных путешествий</h3>
+                    <p class="text-purple-700">Желаю посетить множество стран и познакомиться с разными культурами!</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-purple-300 transform hover:scale-105 transition duration-300">
+                    <div class="text-pink-500 text-4xl mb-4">💖</div>
+                    <h3 class="title-font text-xl font-semibold mb-4">Личного счастья</h3>
+                    <p class="text-purple-700">Пусть в твоей жизни будет много любви, тепла и приятных моментов!</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-purple-300 transform hover:scale-105 transition duration-300">
+                    <div class="text-pink-500 text-4xl mb-4">🌟</div>
+                    <h3 class="title-font text-xl font-semibold mb-4">Ярких впечатлений</h3>
+                    <p class="text-purple-700">Чтобы каждый день приносил что-то новое и запоминающееся!</p>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-purple-300 transform hover:scale-105 transition duration-300">
+                    <div class="text-pink-500 text-4xl mb-4">💪</div>
+                    <h3 class="title-font text-xl font-semibold mb-4">Крепкого здоровья</h3>
+                    <p class="text-purple-700">Будь всегда энергичной и полной сил для новых свершений!</p>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-purple-300 transform hover:scale-105 transition duration-300">
+                    <div class="text-pink-500 text-4xl mb-4">🎉</div>
+                    <h3 class="title-font text-xl font-semibold mb-4">Весёлого праздника</h3>
+                    <p class="text-purple-700">Пусть этот день будет наполнен смехом, радостью и приятными сюрпризами!</p>
+                </div>
+            </div>
+            
+            <!-- Magic Button -->
+            <div class="text-center mt-16">
+                <button id="magicBtn" class="px-8 py-4 bg-gradient-to-r from-purple-400 to-pink-500 text-white font-bold rounded-full shadow-lg hover:from-purple-500 hover:to-pink-600 transform hover:scale-110 transition duration-300 text-xl">
+                    НАЖМИ
+                </button>
+                <p class="mt-4 text-purple-600">Для особенного праздничного настроения!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-purple-600">
+        <p>С любовью для Яси в её 19-й день рождения!  ❤️</p>
+    </footer>
+
+    <script>
+        document.getElementById('magicBtn').addEventListener('click', function() {
+            // Toggle dark mode
+            document.body.classList.add('dark-mode');
+            
+            // Create confetti
+            createConfetti();
+            
+            // Set timeout to return to light mode after 15 seconds
+            setTimeout(() => {
+                document.body.classList.remove('dark-mode');
+            }, 15000);
+        });
+        
+        function createConfetti() {
+            const colors = [
+                '#ff00ff', '#00ffff', '#ffff00', '#ff9900', '#00ff00', 
+                '#ff0099', '#9900ff', '#ff6600', '#00ff99', '#ff0066'
+            ];
+            
+            const shapes = ['★', '⚡', '●', '❀', '♥', '♦', '♠', '♣', '✿', '✧'];
+            
+            for (let i = 0; i < 150; i++) {
+                setTimeout(() => {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    
+                    // Random properties
+                    const size = Math.random() * 12 + 8;
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    const shape = shapes[Math.floor(Math.random() * shapes.length)];
+                    const left = Math.random() * window.innerWidth;
+                    const animationDuration = Math.random() * 3 + 2;
+                    const delay = Math.random() * 5;
+                    
+                    // Apply properties
+                    confetti.style.left = `${left}px`;
+                    confetti.style.width = `${size}px`;
+                    confetti.style.height = `${size}px`;
+                    confetti.style.color = color;
+                    confetti.style.fontSize = `${size}px`;
+                    confetti.style.animationDuration = `${animationDuration}s`;
+                    confetti.style.animationDelay = `${delay}s`;
+                    confetti.textContent = shape;
+                    
+                    document.body.appendChild(confetti);
+                    
+                    // Remove confetti after animation
+                    setTimeout(() => {
+                        confetti.remove();
+                    }, (animationDuration + delay) * 1000);
+                }, i * 100);
+            }
+        }
+    </script>
+</body>
+</html>
